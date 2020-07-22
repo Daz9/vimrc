@@ -1,8 +1,10 @@
-syntax on
+" To install vimplug
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+"Settings
+syntax on
 set guicursor=
 set noshowmatch
-"set relativenumber
 set hlsearch
 set hidden
 set noerrorbells
@@ -34,6 +36,8 @@ set updatetime=50
 "set colorcolumn=80
 "highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+
+" Plugins
 call plug#begin('~/.vim/autoload')
 
 Plug 'vim-utils/vim-man'
@@ -49,7 +53,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 
-
+" Set colurs
 let g:gruvbox_contrast_dark = 'hard'
 if exists('+termguicolors')
     let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -64,6 +68,6 @@ set background=dark
 
 let g:ctrlp_max_files=0
 
-"mapping
+"mappings
 :imap jj <Esc>  
 noremap <C-a> :CtrlP ~/app-travelshops/<CR>
