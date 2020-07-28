@@ -1,7 +1,9 @@
 " To install vimplug
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
+map <SPACE> <leader>
 
-
+"
 " perl
 filetype plugin on
 helptags $HOME/.vim/doc/
@@ -58,9 +60,7 @@ set lazyredraw
 set splitbelow
 set splitright
 set scrolloff=10
-map <SPACE> <leader>
-imap <SPACE> <leader>
-
+			
 
 if &term =~ '256color'
 	set t_ut=
@@ -125,7 +125,9 @@ nmap <silent> <S-Right> :wincmd l<CR>
 " Set jj to exit insert mode 
 :imap jj <Esc>
 
-
+" Mouse mode
+nnoremap <leader>m :set mouse=<CR>
+nnoremap <leader>M :set mouse=a<CR>
 
 " Set colurs
 let g:gruvbox_contrast_dark = 'hard'
@@ -136,6 +138,9 @@ endif
 let g:gruvbox_invert_selection='0'
 
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+
+let g:ctrlp_max_files=0
+let g:ctrlp_max_depth=40
 
 colorscheme gruvbox
 set background=dark
