@@ -60,7 +60,7 @@ set lazyredraw
 set splitbelow
 set splitright
 set scrolloff=10
-			
+
 
 if &term =~ '256color'
 	set t_ut=
@@ -144,3 +144,9 @@ let g:ctrlp_max_depth=40
 
 colorscheme gruvbox
 set background=dark
+
+
+" Git commit message settings
+au FileType gitcommit setlocal tw=72
+au FileType gitcommit setlocal cc=+1
+hi SpellBad ctermbg=red ctermbg=white guibg=red guifg=white
