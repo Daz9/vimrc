@@ -76,18 +76,18 @@ set shiftwidth=4
 set autoindent
 
 " folding
-" set foldmethod=syntax
-" set foldlevelstart=999
-" let perl_fold=1
+set foldmethod=syntax
+set foldlevelstart=999
+let perl_fold=1
 " let javaScript_fold=1
-" let xml_syntax_folding=1
+let xml_syntax_folding=1
 " let sh_fold_enabled=1
-" nmap <leader>ff za
+nmap <leader>ff za
 " This needs some work
 " Currently folds everything then unfolds one level
 " Works great for perl modules but not really for JS
-" nmap <leader>fa zMzr
-" nmap <leader>fu zR
+nmap <leader>fa zMzr
+nmap <leader>fu zR
 
 
 "==================
