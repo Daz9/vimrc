@@ -17,6 +17,7 @@ let perl_extended_vars = 1
 
 call plug#begin('~/.vim/autoload')
 Plug 'vim-utils/vim-man'
+Plug 'konfekt/fastfold'
 Plug 'mbbill/undotree'
 Plug 'gruvbox-community/gruvbox'
 Plug 'sainnhe/gruvbox-material'
@@ -67,7 +68,7 @@ if &term =~ '256color'
 endif
 
 " perl
-" let perl_extended_vars=1
+let perl_extended_vars=1
 
 " tabs
 set tabstop=4
@@ -76,12 +77,12 @@ set shiftwidth=4
 set autoindent
 
 " folding
-set foldmethod=syntax
+set foldmethod=manual
 set foldlevelstart=999
 let perl_fold=1
-" let javaScript_fold=1
+let javaScript_fold=1
 let xml_syntax_folding=1
-" let sh_fold_enabled=1
+ let sh_fold_enabled=1
 nmap <leader>ff za
 " This needs some work
 " Currently folds everything then unfolds one level
