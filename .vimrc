@@ -72,6 +72,10 @@ endif
 " perl
 let perl_extended_vars=1
 
+"perl tidy 
+nnoremap <silent> <leader>t :%!perltidy -q<Enter>
+vnoremap <silent> <leader>t :!perltidy -q<Enter>
+
 "DelitMate
 let delimitMate_expand_cr = 1
 filetype indent plugin on
