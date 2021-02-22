@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Darren Johnston
-	email = darren@traveltek.net
+	email = #insert email address #
 
 [push]
 	default = current
