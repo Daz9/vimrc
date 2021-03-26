@@ -1,5 +1,8 @@
 " To install vimplug
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" wget https://www.vim.org/scripts/download_script.php?src_id=24473;
+" mv wrongname to perl-support.zip 
+" cd .vim; unzip ~/perl-support.zip ./
 "
 "perl 
 filetype plugin on
