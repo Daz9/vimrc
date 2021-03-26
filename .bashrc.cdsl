@@ -1,6 +1,7 @@
 # .bashrc
 
 export SVN_EDITOR=vim
+export PATH="$PATH:/mnt/devhomes/djohnston/gits/snippets/work_env/path_scripts/:/mnt/devhomes/djohnston/gits/diff-so-fancy/diff-so-fancy"
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -81,8 +82,8 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -97,6 +98,15 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ff='function _ff(){ find . | grep -i $1; }; _ff'
+alias v2log='tail -f /var/log/v2/error.log'
+alias ww='cd /www'
+alias gs='git status'
+alias gd='git diff'
+alias gp='git pull'
+alias gpp='git push'
+alias dsf='/mnt/devhomes/djohnston/gits/diff-so-fancy/diff-so-fancy'
+alias pbl='perlbrew list'
+alias sd='svn diff | dsf'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -121,3 +131,4 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
